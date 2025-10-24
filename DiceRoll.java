@@ -11,8 +11,8 @@ public class DiceRoll {
 
         // Display results
         System.out.println("You rolled:");
-        printDie(die1);  //prints out the results
-        printDie(die2);
+        printDie(die1);  //prints out the results and picks the art for the corrosponding value
+        printDie(die2); //same logic applied here as well 
         System.out.println("Total: " + (die1 + die2)); //prints out the sum 
     }
 
@@ -20,7 +20,7 @@ public class DiceRoll {
     public static void printDie(int n) { 
         //uses static because we are borrowing from static main method and takes the integer from our N values AKA our dice values and sets up drawings for each summation 
         System.out.println(" _______ ");
-        
+        // N is the die value which dictates how our dice is gonna look like 
         // used if-else statements
         if (n == 1) {
             System.out.println("|       |");
